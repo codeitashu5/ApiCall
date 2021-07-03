@@ -30,13 +30,13 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-
+//the comment that i am puting is very important for the progress
         val api = retrofitBilder?.create(ApiInterface::class.java)
         val list:MutableList<Data> = mutableListOf()
 
         coroutineScope {
           val diff = listOf(
-                  async { callApi(api,list,1) },
+                  async { callApi(api,list,2) },
                   async { callApi(api,list,2) },
                   async { callApi(api,list,1) },
 
